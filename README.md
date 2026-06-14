@@ -107,21 +107,37 @@ pip install -r requirements.txt
 
 ---
 
-## Running the Project
+## Live Demo
 
-Run live prediction:
+The Streamlit web application has been deployed and can be accessed online:
+
+**Demo Link:**
+(https://smart-bin-5tpeewavzjn3qm8yicoe2l.streamlit.app/)
+
+Users can upload an image of waste and receive a classification result through the web interface.
+
+---
+
+## Live Prediction
+
+The `live_prediction.py` script performs real-time waste classification using a smartphone camera.
+
+### Requirements
+
+* A smartphone camera connected to the computer.
+* Connection through:
+
+  * USB-C cable, or
+  * Wi-Fi connection (e.g., DroidCam/IP Webcam).
+
+### Run
 
 ```bash
 python live_prediction.py
 ```
 
-Run Streamlit application:
+Once connected, the system captures live video from the phone camera and classifies waste as Plastic or Biological in real time.
 
-```bash
-streamlit run streamlit_web.py
-```
-
----
 
 ## Results
 
